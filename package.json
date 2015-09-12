@@ -1,0 +1,30 @@
+{
+  "name": "devfest.in",
+  "version": "0.0.1",
+  "description": "A crowd sourced developer events calendar for India",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhimanyuma/devfest.in"
+  },
+  "keywords": [
+    "event",
+    "directory",
+    "event-directory",
+    "developer-festivals",
+    "dev-fest"
+  ],
+  "author": "Abhimanyu M A, Hari C M",
+  "license": "AGPL v3.0",
+  "bugs": {
+    "url": "https://github.com/abhimanyuma/devfest.in/issues"
+  },
+  "homepage": "https://github.com/abhimanyuma/devfest.in"
+}
