@@ -1,6 +1,11 @@
-greeting = (name) ->
-  "Hello #{name}!"
+express = require 'express'
+app = express()
 
-module.exports.greeting = greeting
+app.get '/', (req, res) ->
+  res.send "Hello World!"
 
-console.log greeting "Manyu"
+server = app.listen 3000, () ->
+  host = server.address().address
+  port = server.address().port
+
+  console.log 'Test app at http://%s:%s', host, port
