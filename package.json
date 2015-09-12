@@ -2,13 +2,18 @@
   "name": "devfest.in",
   "version": "0.0.1",
   "description": "A crowd sourced developer events calendar for India",
-  "main": "app.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.13.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.2",
+    "should": "^7.1.0",
+    "coffee-script": "^1.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w --compilers coffee:coffee-script/register",
+    "start": "(coffee --compile --output dist --watch src &);node ./dist/index.js"
   },
   "repository": {
     "type": "git",
